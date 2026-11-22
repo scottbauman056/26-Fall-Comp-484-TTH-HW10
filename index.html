@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Your Giga Pet</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>
+                This is The Giga Pet
+            </h1>
+        </header>
+
+        <main>
+            <section class="pet-image-container card">
+                <img class="pet-image" src="images/pet.jpg" alt="Coco the crocodile">
+            </section>
+            <section class="dashboard card">
+                <div>Name: <strong><span class="name"></span></strong></div>
+                <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+                <div>Happiness?: <strong><span class="happiness"></span> tail slaps (per min)</strong></div>
+                <!-- Added a new stat to tie into the Nap button  -->
+                <div>Energy: <strong><span class="energy"></span></strong></div>
+                <div class="button-container">
+                    <button class="treat-button">
+                        Treat
+                    </button>
+                    <button class="play-button">
+                        Play
+                    </button>
+                    <button class="exercise-button">
+                        Exercise
+                    </button>
+                    <!-- New action button -->
+                    <button class="nap-button">
+                        Nap
+                    </button>
+                </div>
+                <!-- Calls pet's comment after each button press, filled in by script.js -->
+                <p class="pet-comment"></p>
+            </section>
+            <!-- New DevTools buttons that make the browser log its own messages -->
+            <section class="devtools card">
+                <h2>DevTools Examples</h2>
+                <div class="button-container">
+                    <button class="cause-404-button">
+                        Cause 404
+                    </button>
+                    <button class="cause-error-button">
+                        Cause Error
+                    </button>
+                    <button class="cause-violation-button">
+                        Cause Violation
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+                integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+                crossorigin="anonymous"></script>
+    </body>
+</html>

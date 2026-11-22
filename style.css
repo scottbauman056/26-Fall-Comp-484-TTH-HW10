@@ -1,0 +1,110 @@
+/* Color Palette
+#0F1115 - page background
+#1C2026 - card surface
+#2C333D - borders and buttons
+#3A424D - button border
+#EDEDF2 - primary text
+#9AA3AD - muted text
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 25px;
+    background: #0F1115;
+    color: #EDEDF2;
+}
+
+/* Centered column holding both cards */
+main {
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px solid #2C333D;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    color: #EDEDF2;
+}
+
+
+/* Cards
+------------------------------------*/
+
+.card {
+    background: #1C2026;
+    border: 1px solid #2C333D;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pet-image {
+    height: 250px;
+    border-radius: 10px;
+}
+
+.dashboard div {
+    display: block;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-container button {
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    background-color: #2C333D;
+    border-color: #3A424D;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, rgba(246, 246, 246, 0.1) 0%, rgba(30, 40, 53, 0) 66%);
+    color: #EDEDF2;
+}
+
+/* Code to fade action buttons out when energy is insufficient */
+.button-container button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+
+/* Pet comment
+------------------------------------*/
+
+
+   /* The comment starts invisible to keep its space for formatting
+	  to avoid the card heigh changing on fade in/out.*/
+.pet-comment {
+    opacity: 0;
+    min-height: 2.4em;
+    margin: 15px auto 0;
+    font-style: italic;
+    color: #9AA3AD;
+}
+
+
+/* DevTools examples card
+------------------------------------*/
+
+/* Wider buttons so "Cause Violation" stays on one line */
+.devtools button {
+    width: 130px;
+}
+
+.devtools h2 {
+    margin-top: 0;
+}
